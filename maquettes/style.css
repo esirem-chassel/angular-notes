@@ -48,10 +48,11 @@ h1 {
 
 nav {
     display: flex;
+    list-style: none;
+    padding-left: 0px;
 }
 
 nav li {
-    list-style: none;
     flex: 1 1 auto;
     text-align: center;
 }
@@ -67,3 +68,56 @@ nav li a {
     font-style: italic;
 }
 
+ul.no-list {
+    display: flex;
+    list-style: none;
+    padding-left: 0px;
+}
+
+ul.no-list li {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+.notes-list {
+    list-style: none;
+    padding-left: 0px;
+    display: flex;
+    flex: auto;
+    flex-flow: row wrap;
+}
+
+.notes-list > li {
+    max-width: 40em;
+    padding: 5px;
+}
+
+.note {
+    border: 1px solid var(--accent);
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px var(--accent);
+    padding: 10px;
+    padding-top: 0px;
+}
+
+.note h2 {
+    color: var(--accent);
+}
+
+.note:focus, .note:hover {
+    border-color: var(--accent-focus);
+    box-shadow: 1px 1px 3px var(--accent-focus);
+}
+
+.note:focus h2, .note:hover h2 {
+    color: var(--accent-focus);
+}
+
+.note > footer {
+    padding: 5px;
+}
+
+.checklist {
+    list-style: none;
+    padding-left: 0px;
+}
