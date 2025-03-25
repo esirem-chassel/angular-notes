@@ -64,22 +64,37 @@ nav li a {
     min-width: 85%;
 }
 
-.no-note {
+.no-note, .no-tag {
     font-style: italic;
 }
 
-ul.no-list {
+#createNoteForm, #createTagForm {
+    background-color: var(--bg);
+    border: 1px solid var(--accent);
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px var(--accent);
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+ul.no-list, ul.no-tag {
     display: flex;
     list-style: none;
     padding-left: 0px;
 }
 
-ul.no-list li {
+ul.no-list li, ul.no-tag li {
     flex: 1 1 auto;
     text-align: center;
 }
 
-.notes-list {
+.notes-list, .tags-list {
     list-style: none;
     padding-left: 0px;
     display: flex;
@@ -87,12 +102,12 @@ ul.no-list li {
     flex-flow: row wrap;
 }
 
-.notes-list > li {
+.notes-list > li, .tags-list > li {
     max-width: 40em;
     padding: 5px;
 }
 
-.note {
+.note, .tag {
     border: 1px solid var(--accent);
     border-radius: 3px;
     box-shadow: 1px 1px 2px var(--accent);
@@ -100,20 +115,20 @@ ul.no-list li {
     padding-top: 0px;
 }
 
-.note h2 {
+.note h2, .tag h2 {
     color: var(--accent);
 }
 
-.note:focus, .note:hover {
+.note:focus, .note:hover, .tag:focus, .tag:hover {
     border-color: var(--accent-focus);
     box-shadow: 1px 1px 3px var(--accent-focus);
 }
 
-.note:focus h2, .note:hover h2 {
+.note:focus h2, .note:hover h2, .tag:focus h2, .tag:hover h2 {
     color: var(--accent-focus);
 }
 
-.note > footer {
+.note > footer, .tag > footer {
     padding: 5px;
 }
 

@@ -35,6 +35,21 @@
         <a href="#" class="no-note">
             Insérez ici votre première note...
         </a>
+        <form id="createNoteForm" class="hidden">
+            <p>
+                <input type="text" name="title" placeholder="Titre de la note" />
+            </p>
+            <p>
+                <textarea name="content" placeholder="Contenu de la note"></textarea>
+            </p>
+            <p>
+                <input type="color" name="color" placeholder="Couleur" />
+            </p>
+            <p>
+                <input type="submit" name="createNote" value="Créer cette nouvelle note" />
+                <a href="#" class="cancel">Annuler</a>
+            </p>
+        </form>
     </main>
     <footer>
         <ul class="no-list">
@@ -50,6 +65,7 @@
             </li>
         </ul>
     </footer>
+    <script type="text/javascript" src="./script.js"></script>
 </body>
 
 </html>
