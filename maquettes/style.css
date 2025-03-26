@@ -1,0 +1,138 @@
+:root {
+    --bg: #263238;
+    --txt: #eceff1;
+    --accent: #90a4ae;
+    --accent-focus: #cfd8dc;
+}
+
+html,
+body {
+    font-family: Verdana, serif;
+    background-color: var(--bg);
+    color: var(--txt);
+}
+
+a,
+a:visited {
+    color: var(--accent);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover,
+a:focus,
+a:visited:hover,
+a:visited:focus {
+    color: var(--accent-focus);
+    text-decoration: underline;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+}
+
+body>header {
+    display: flex;
+    align-items: baseline;
+}
+
+h1 {
+    text-align: center;
+}
+
+.flex-sh {
+    flex: 1 1 auto;
+}
+
+nav {
+    display: flex;
+    list-style: none;
+    padding-left: 0px;
+}
+
+nav li {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+nav li a {
+    display: inline-block;
+    margin: auto;
+    padding: 0.8em;
+    min-width: 85%;
+}
+
+.no-note, .no-tag {
+    font-style: italic;
+}
+
+#createNoteForm, #createTagForm {
+    background-color: var(--bg);
+    border: 1px solid var(--accent);
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px var(--accent);
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+ul.no-list, ul.no-tag {
+    display: flex;
+    list-style: none;
+    padding-left: 0px;
+}
+
+ul.no-list li, ul.no-tag li {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+.notes-list, .tags-list {
+    list-style: none;
+    padding-left: 0px;
+    display: flex;
+    flex: auto;
+    flex-flow: row wrap;
+}
+
+.notes-list > li, .tags-list > li {
+    max-width: 40em;
+    padding: 5px;
+}
+
+.note, .tag {
+    border: 1px solid var(--accent);
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px var(--accent);
+    padding: 10px;
+    padding-top: 0px;
+}
+
+.note h2, .tag h2 {
+    color: var(--accent);
+}
+
+.note:focus, .note:hover, .tag:focus, .tag:hover {
+    border-color: var(--accent-focus);
+    box-shadow: 1px 1px 3px var(--accent-focus);
+}
+
+.note:focus h2, .note:hover h2, .tag:focus h2, .tag:hover h2 {
+    color: var(--accent-focus);
+}
+
+.note > footer, .tag > footer {
+    padding: 5px;
+}
+
+.checklist {
+    list-style: none;
+    padding-left: 0px;
+}

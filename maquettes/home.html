@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <title>Notes</title>
+</head>
+
+<body>
+    <header>
+        <h1>Notes</h1>
+        <div class="flex-sh">
+            <nav>
+                <li>
+                    <a href="#">
+                        Accueil
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Étiquettes
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Paramètres
+                    </a>
+                </li>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <a href="#" class="no-note">
+            Insérez ici votre première note...
+        </a>
+        <form id="createNoteForm" class="hidden">
+            <p>
+                <input type="text" name="title" placeholder="Titre de la note" />
+            </p>
+            <p>
+                <textarea name="content" placeholder="Contenu de la note"></textarea>
+            </p>
+            <p>
+                <input type="color" name="color" placeholder="Couleur" />
+            </p>
+            <p>
+                <input type="submit" name="createNote" value="Créer cette nouvelle note" />
+                <a href="#" class="cancel">Annuler</a>
+            </p>
+        </form>
+    </main>
+    <footer>
+        <ul class="no-list">
+            <li>
+                <a href="#">
+                    Conditions générales
+                </a>
+            </li>
+            <li>
+                Copyright pas du tout,
+                payez-moi une mousse pour
+                copier tout ça
+            </li>
+        </ul>
+    </footer>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>
